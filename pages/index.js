@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,6 +11,22 @@ export default function Home() {
       </Head>
 
       <main>
+        <h1 className={styles.title}>
+          Read this post
+          <Link href="/posts/first-post">첫번째 글</Link>
+        </h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -58,6 +75,11 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
+
+        <p>
+          Read this post
+          <Link href="/posts/second-post">두번째 글</Link>
+        </p>
       </footer>
 
       <style jsx>{`
