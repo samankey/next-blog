@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,24 +12,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
+        <Image
+          src="/images/OKYA_logo_mono.png"
+          alt="test"
+          width={120}
+          height={60}
+        />
+        <h1 className={styles.title}>
           Read this post
-          <Link className={styles.title} href="/posts/first-post">
-            첫번째 글
-          </Link>
+          <Link href="/posts/first-post">첫번째 글</Link>
         </h1>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
