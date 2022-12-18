@@ -11,9 +11,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className={styles.title}>
+        <h1>
           Read this post
-          <Link href="/posts/first-post">첫번째 글</Link>
+          <Link className={styles.title} href="/posts/first-post">
+            첫번째 글
+          </Link>
         </h1>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
